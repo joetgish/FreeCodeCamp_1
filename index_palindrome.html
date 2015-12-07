@@ -1,0 +1,52 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>FCC Bonfire: Check for Palindromes</title>
+	<body>
+
+		<h1>FCC Bonfire: Check for Palindromes</h1>
+
+		<p id="demo"></p>
+
+		<script>
+			// regex metacharacter info: http://www.w3schools.com/jsref/jsref_obj_regexp.asp
+			// note that the match() function returns an array
+
+			function palindrome(str) {
+
+  
+  				var expression = /[a-z|0-9]/gi; //regex for matching
+  				var newString = str.match(expression).join('');   //array returned from match
+  															      // join to make string
+  												      		
+  				var lowerString = newString.toLowerCase();		  // make lowercase
+
+  				window.alert(lowerString);
+  				var revString = lowerString.split('').reverse().join('');   //reverse
+  				
+  				
+  				return(lowerString == revString);
+    			
+			}
+			
+			// function calls can go here
+			var result = palindrome("1 eye for of 1 eye.");
+			
+
+
+			// text is the string which holds output values
+
+			text =  result;
+
+
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

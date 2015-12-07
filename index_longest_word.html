@@ -1,0 +1,52 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>Bonfire: Find the Longest Word in a String</title>
+	<body>
+
+		<h1>Bonfire: Find the Longest Word in a String</h1>
+
+		<p id="demo"></p>
+
+		<script>
+			
+			function findLongestWord(str) {
+
+
+  				var words = str.split(' ');
+  				var maxLength = 0;
+
+
+  				for (var i = 0; i < words.length; i++) {
+  					
+  					
+  					if(words[i].length > maxLength)
+  					{
+  						//alert(words[i].length);
+  						maxLength = words[i].length;
+  					}
+  					
+  				}
+
+  				return (maxLength);
+			}
+
+			var text = findLongestWord("What if we try a super-long word such as otorhinolaryngology");
+    		
+			
+			
+			// text is the string which holds output values
+
+			
+			
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

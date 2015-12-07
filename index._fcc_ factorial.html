@@ -1,0 +1,38 @@
+<!-- Free Code Camp Practice -->
+
+<!DOCTYPE html>
+<html>
+
+	<title>FCC Bonfire: Calculate factorial</title>
+	<body>
+
+		<h1>FCC Bonfire: Calculate factorial</h1>
+
+		<p id="demo"></p>
+
+		<script>
+
+			function factorial(num) {
+  
+  				var product = 1;
+
+  				for(var i = num; i >= 1; i--){
+  					product = product * i;
+  				}
+  
+  				return product;
+			}
+
+			// text is the string which holds output values
+
+			text = "The answer is: " + factorial(5) + "<p></p>";
+
+
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

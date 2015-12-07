@@ -1,0 +1,45 @@
+<!-- Free Code Camp Practice -->
+
+<!DOCTYPE html>
+<html>
+
+	<title>This is JS Practice</title>
+	<body>
+
+		<h1>FCC Bonfire: Reverse a String</h1>
+
+		<p id="demo"></p>
+
+		<script>
+
+			function reverseString(str) {
+  
+  				var array = str.split('');
+  				var newArray = array.reverse();
+  				var newString = newArray.join('');
+  
+ /*
+  				var text = "";
+				var i;
+				for (i = 0; i < array.length; i++) {
+				    text += array[i] + "<br>";
+				}
+*/
+				
+      			//window.alert(newString);
+  
+  				return newString;
+			}
+
+			text = reverseString("Hello");
+			
+			document.getElementById("demo").innerHTML = text;
+
+			
+
+
+
+		</script>
+
+	</body>
+</html> 
