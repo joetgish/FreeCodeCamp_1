@@ -1,0 +1,52 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>Bonfire: Truncate a string</title>
+	<body>
+
+		<h1>Bonfire: Truncate a string</h1>
+
+		<p id="demo"></p>
+
+		<script>
+
+			function chunk(arr, size) {
+			 
+			  var ix = 0;
+			  var newArr = [];
+			 
+			  
+			  while(ix < arr.length)
+			  {
+			  	i_arr = [];
+			  	for (var i = 0; i < size; i++) {
+			  		
+			  		alert("ix = " + ix);
+			  		i_arr.push(arr[ix]);
+			  		ix++;
+			  		alert("i_arr= " + i_arr);
+			  	}
+			  	newArr.push(i_arr);
+			  	alert(newArr);
+
+			  }
+
+			  
+			  return newArr;
+			}
+			
+			// text is the string which holds output values
+			var text = chunk(["a", "b", "c", "d"], 2);
+
+			
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

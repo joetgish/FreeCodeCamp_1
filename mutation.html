@@ -1,0 +1,66 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>Bonfire: Mutations</title>
+	<body>
+
+		<h1>Bonfire: Mutations</h1>
+
+		<p id="demo"></p>
+
+		<script>
+			// str1 -> str length = 1
+			// str2 -> str length >= 1
+			// returns true of str1 is "in" str2
+
+			function isIn(str1, str2)  
+			{
+
+				var ans = false;
+				for (var i = 0; i < str2.length; i++) 
+				{	
+
+					if(str1 == str2[i])
+					{
+						ans = true;
+						break;
+					}
+				}
+
+				return ans;
+			}
+
+			function mutation(arr) {
+				  strA = arr[0].toLowerCase();
+				  strB = arr[1].toLowerCase();
+
+				  var result = true;
+
+				  for (var i = 0; i < strB.length; i++) {
+				  		
+				  	   result = isIn(strB[i], strA);
+				  	   if(result == false)
+				  	   {
+				  	   		break;
+				  	   }
+
+				  }
+
+				  return result;
+			}
+			
+			// text is the string which holds output values
+			var text = mutation(["hello", "neo"]);
+
+			
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

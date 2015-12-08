@@ -1,0 +1,59 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>Bonfire: Truncate a string</title>
+	<body>
+
+		<h1>Bonfire: Truncate a string</h1>
+
+		<p id="demo"></p>
+
+		<script>
+
+			function truncate(str, num) {
+				
+
+				var newString = "";
+  				if (num > str.length)
+  				{
+  					newString = str;
+  					return newString;
+  				}
+
+  				if (num <= str.length)
+  				{
+
+  					if(num <= 3)
+  					{
+  						newString = str.slice(0, num) + "...";
+  						return newString;
+  					}
+  					else if(num == str.length )
+  					{
+  						return str;
+  					}
+  					else
+  					{
+  						newString = str.slice(0, num - 3) + "...";
+  						return newString;
+  					}
+  				}
+
+  				
+			}// end truncate()
+			
+			// text is the string which holds output values
+			var text = truncate("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
+
+			
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 

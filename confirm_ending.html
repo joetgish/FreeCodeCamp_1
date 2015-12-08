@@ -1,0 +1,35 @@
+<!-- Free Code Camp Practice -->
+
+
+<!DOCTYPE html>
+<html>
+
+	<title>Bonfire: Confirm the Ending</title>
+	<body>
+
+		<h1>Bonfire: Confirm the Ending</h1>
+
+		<p id="demo"></p>
+
+		<script>
+
+			
+			function end(str, target) {
+				  var tL = target.length;
+				  var sL = str.length;
+
+				  var strEnd = str.substr(sL - tL);
+				  return(strEnd == target);
+			}
+			
+			// text is the string which holds output values
+			var text = end("Bastian", "bn");
+			
+			// avoid changing this line - used to simplify output
+			
+			document.getElementById("demo").innerHTML = text;
+
+		</script>
+
+	</body>
+</html> 
